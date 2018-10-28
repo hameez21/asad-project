@@ -1,0 +1,293 @@
+#backgroundImg
+{
+    background-image: url('images/bgc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0;
+    top: 0px;
+    filter: brightness(.3) blur(3px);
+    -webkit-filter: brightness(.3) blur(2px);
+    z-index: 1;
+    transition: 1.5s all;
+    border-bottom: 10px solid #303030;
+    overflow: hidden;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+#errorMessage
+{
+    position: absolute;
+    width: 25%;
+    max-height: 10%;
+    top: 20%;
+    left: 37.5%;
+    opacity: 0;
+    visibility: hidden;
+    color: red;
+    font-size: 1.2em;
+    transition: 0.5s all;
+    overflow: hidden;
+    z-index: 2;
+    word-wrap: break-word;
+}
+
+#content
+{
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.topFlex
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+header
+{
+    width: 100%;
+    z-index: 3;
+    height: 5%;
+    background-color: #303030;
+    margin-bottom: 3%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+footer
+{
+    width: 100%;
+    height: 5%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 95%;
+    background-color: #303030;
+    color: white;
+}
+
+footer p
+{
+    position: relative;
+    top: calc(50% - 0.6em);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#body
+{
+    font-family: 'Arapey','Wendy One','Sofia','Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    overflow: hidden;
+    height: auto;
+}
+h1,a
+{
+    font-family: 'Ubuntu','Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+a
+{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+a:visited, a:link
+{
+    color: white;
+}
+
+a:hover
+{
+    color: rgb(187, 70, 49);
+}
+
+label
+{
+    color: white;
+}
+
+#loginForm
+{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 37.5%;
+    width: 25%;
+    height: auto;
+}
+
+#switchLS
+{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.formElem
+{
+    position: relative;
+    width: 100%;
+    margin: 5%;
+    background-color: transparent;
+}
+
+.formInput, #submitBtn
+{
+    border: none;
+    border-bottom: 3px solid rgb(187, 70, 49);
+    padding: 10px;
+    color: white;
+    font-family: 'Arapey','Wendy One','Sofia','Times New Roman', Times, serif;
+    font-size: 1.2em;
+    transition: 0.5s border;
+}
+
+.formInput:focus
+{
+
+    outline: none;
+    border: 3px solid rgb(187, 70, 49);
+    border-radius: 5px;
+}
+
+#submitBtn
+{
+    background-color: rgb(187, 70, 49);
+    border: 3px solid rgb(187, 70, 49);
+    border-radius: 5px;
+    position: relative;
+    width: 50%;
+    left: 25%;
+    transition: none;
+}
+
+#submitBtn:focus
+{
+    outline: none;
+    border: 3px solid #303030;
+}
+
+input::placeholder
+{
+    color: white;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0 30px #303030 inset;
+    -webkit-box-shadow: 0 0 0 30px #303030 inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
+
+a[href="SignUp.php"], a[href="Login.php"]
+{
+    transition: 0.4s all;
+}
+
+a[href="advsearch.php"]:hover
+{
+    color: rgb(187, 70, 49);
+}
+
+@media screen and (max-width: 700px)
+{
+    #loginForm
+    {
+        width: 100%;
+        left: 5%;
+        margin-top: 10%;
+        padding: 10px;
+        padding-bottom: 20%;
+    }
+
+    #errorMessage
+    {
+        width: 80%;
+        left: 5%;
+        margin-top: 10%;
+        padding: 10px;
+        padding-bottom: 20%;
+    }
+
+    .formInput
+    {
+        width: 80%;
+    }
+
+    #submitBtn
+    {
+        width: 50%;
+        left: 15%;
+    }
+
+    #switchLS
+    {
+        position: relative;
+        text-align: center;
+        left: -10%;
+        margin-top: 3%;
+    }
+    .topFlex
+    {
+        min-height: 100%;
+    }
+
+    footer p
+    {
+    top: calc(50% - 0.5em);
+    font-size: 1em;
+    }
+}
+
+@media screen and (max-height: 700px)
+{
+    #loginForm
+    {
+        top: 20%;
+        margin-bottom: 10%;
+    }
+
+    #errorMessage
+    {
+        top: 10%;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 700px) {
+    footer
+    {
+        height: 10%;
+    }
+
+    #errorMessage
+    {
+        margin-top: 5%;
+    }
+
+    #loginForm
+    {
+        margin-top: 5%;
+    }
+}

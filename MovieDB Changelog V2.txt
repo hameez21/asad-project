@@ -1,0 +1,18 @@
+Changelog V2:
+
+1- Added Rating Capability (Backend Calculation)
+2- Added SignOut (Frontend + Backend)
+3- Fixed Episodes on Mobile
+4- Cleaned/Fixed LoginDiv (Can adjust to height)
+5- Added complete navigation on all pages (except Advanced Search)
+6- Added fonts on all pages
+7- Removed Drop down from category and renamed it to Genrefy
+8- Removed length when isTvSeries=1
+9- Login/Signup cannot be reached if user is logged in.
+10- Added Footer on all pages (need adjustment on index and toppop)
+
+
+
+mjhe advanced search ki php nhi mili khin bas html he wo tm dekhlo
+toppop pr tmne logindv se related kuch nhi kia hua wo bhi dekhlena 
+baki jahan touchups hon wo dekhlena

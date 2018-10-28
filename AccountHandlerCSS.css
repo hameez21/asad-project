@@ -1,0 +1,25 @@
+#user
+{
+    display: none;
+    position: absolute;
+    float: right;
+    height: 100px;
+}
+
+#signOut
+{
+    display: none;
+    position: relative;
+    float: right;
+}
+
+.login
+{
+    transition: 0.4s all;
+    color: white;
+}
+
+.login:hover
+{
+    color: rgb(187, 70, 49);
+}

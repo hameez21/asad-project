@@ -1,0 +1,656 @@
+#backgroundImg
+{
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    filter: brightness(.5);
+    -webkit-filter: brightness(.5);
+    z-index: 1;
+    transition: 1.5s all;
+    border-bottom: 10px solid black;
+}
+
+#nameField      /* Shows Only For Guest */
+{
+    border: none;
+    position: relative;
+    border-bottom: 3px solid rgb(187, 70, 49);
+    color: white;
+    font-family: 'Arapey','Wendy One','Sofia','Times New Roman', Times, serif;
+    font-size: 1em;
+    transition: 0.5s border;
+    display: block;
+    background-color: transparent;
+    margin: 2% 0 2% 0; 
+}
+
+#loginToRate, .commentStatus
+{
+    color: rgb(177, 10, 10);
+    font-size: 20px;
+    font-family: 'Arapey','Wendy One','Sofia','Times New Roman', Times, serif;
+    font-size: 1em;
+    font-weight: bolder;
+    display: none;
+    transition: 1s all;
+}
+
+.commentStatus
+{
+    transition: none;
+    margin: 1% 0 1% 0;
+}
+
+#loginToRate:hover
+{
+    font-size: 1.5em;
+    color: rgb(255, 10, 10);
+}
+
+#nameField:focus
+{
+    outline: none;
+    border: 3px solid rgb(187, 70, 49);
+    border-radius: 5px;
+}
+
+#content
+{
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.topFlex
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+header
+{
+    width: 100%;
+    z-index: 3;
+    min-height: 5%;
+    background-color: #303030;
+    margin-bottom: 3%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+html 
+{
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
+#thumbnail
+{
+    width: 40%;
+    height: auto;
+    min-height: 40%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#thumbnail img
+{
+    max-width: 35%;
+    min-width: 200px;
+    max-height: 35%;
+    min-height: 300px;
+    border: 4px solid black;
+}
+
+#generalInfo
+{
+    width: 60%;
+    height: auto;
+    min-height: 40%;
+    margin-bottom: 3%;
+    overflow-x: hidden;
+}
+
+#synopsis
+{
+    width: 59%;
+    height: auto;
+    margin-bottom: 3%;
+    line-height: 1.5em;
+}
+
+#synopsis p
+{
+    font-size: 1.2em;
+}
+
+#episodeGuide
+{
+    display: none;
+    margin-top: 3%;
+    padding: 5px;
+    height: auto;
+}
+
+#epGLink
+{
+    display: none;
+}
+
+#episodes
+{
+    max-height: 50%;
+    min-height: 20%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#epInfo
+{
+    position: absolute;
+    top: 0%;
+    left: 15%;
+    margin-left: 3%;
+}
+
+#epNumber
+{
+    float: right;
+    position: relative;
+    right: 20%;
+    border-bottom: 2px solid rgb(187, 70, 49);
+}
+
+.episode
+{
+    position: relative;
+    width: 100%;
+    margin: 3% 3% 3% 0;
+}
+
+.episode img
+{
+    object-fit: contain;
+    max-width: 15%;
+    max-height: 10%;
+}
+
+.seasonLinks
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.seasonLinks a
+{
+    margin: 3% 3% 3% 0;
+    font-size: 1em;
+    font-weight: lighter;
+    transition: 0.5s all;
+}
+
+#movieInfo
+{
+    width: 39%;
+    position: sticky;
+    top: 10%;
+    text-align: center;
+    line-height: 3em;
+    height: auto;
+    margin-bottom: 3%;
+}
+
+#trailers, #parentsGComm, #episodeGuide, #episodeGuideBtn
+{
+    position: relative;
+    left: 39%;
+    width: 59%;
+    height: auto;
+    text-align: left;
+    margin-bottom: 3%;
+    line-height: 1.5em;
+}
+
+.similarFlex
+{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    max-height: 50%;
+    width: 100%;
+    margin-top: 5%;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.similarLink
+{
+    position: relative;
+    text-align: center;
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0 5% 5% 0;
+    max-width: 150px;
+    max-height: 250px;
+}
+
+.similarLink img
+{
+    min-width: 100%;
+    height: 80%;
+}
+
+.similarName
+{
+    padding-top: 3%;
+    min-width: 100%;
+    height: 20%;
+    text-align: center;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+#trailers iframe
+{
+    margin-top: 3%;
+    border: 4px solid black;
+    width: 80%;
+    height: 500px;
+}
+
+#episodeGuideBtn
+{
+    margin: 3% 0 5% 0;
+    font-size: 1em;
+    display: none;
+}
+
+#generalInfo h1
+{
+    color: white;
+}
+
+#generalInfo p
+{
+    color: white;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+#movieInfo p
+{
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#PGs
+{
+    margin-bottom: 10%;
+}
+
+#PGs h1
+{
+    margin-bottom: 3%;
+}
+
+#comments
+{
+    padding: 5px;
+    margin-bottom: 3%;
+}
+
+#allComments
+{
+    max-height: 50%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#commentBtn
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    min-width: 10%;
+    position: relative;
+    left: 0;
+    padding: 5px;
+    background-color: rgb(187, 70, 49);;
+    font-family: 'Arapey','Wendy One','Sofia','Times New Roman', Times, serif;
+    font-size: 1em;
+    border: none;
+    color: white;
+    display: block;
+}
+
+#commentBtn:focus
+{
+    outline: none;
+    border: 5px solid #303030;
+}
+
+#usersComment
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#userName
+{
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 1%;
+    position: relative;
+    font-weight: bold;
+}
+
+#userComment
+{
+    width: 80%;
+    padding: 5px;
+    text-align: left;
+    position: relative;
+}
+
+.savedComment
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+}
+
+p span
+{
+    font-weight: lighter;
+}
+
+textarea
+{
+    min-height: 10%;
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+    width: 80%;
+    border: none;
+    border-bottom: 5px solid rgb(187, 70, 49);
+    font-family: 'Arapey','Wendy One','Sofia','Times New Roman', Times, serif;
+    font-size: 1.2em;
+    border-radius: 5px;
+    height: auto;
+    transition: 0.5s all;
+}
+
+textarea:focus
+{
+    border: 5px solid rgb(187, 70, 49);
+}
+
+footer
+{
+    width: 100%;
+    height: 5%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 95%;
+    background-color: #303030;
+}
+
+footer p
+{
+    position: relative;
+    top: calc(50% - 0.6em);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+body
+{
+    font-family: 'Arapey','Wendy One','Sofia','Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    overflow: hidden;
+}
+h1,a
+{
+    font-family: 'Ubuntu','Nunito','Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+a
+{
+    text-decoration: underline;
+    font-size: 1.5em;
+    transition: 0.5s all;
+}
+
+a:visited, a:link
+{
+    color: white;
+}
+
+a:hover
+{
+    color: rgb(187, 70, 49);
+    cursor: pointer;
+}
+
+hr
+{
+    border: 2px solid rgb(187, 70, 49);;
+    width: 80%;
+    position: relative;
+    left: 0;
+    
+}
+
+.rateStar
+{
+    font-size: 20;
+}
+
+.rateStar:hover
+{
+    cursor: pointer;
+    font-size: 30px;
+    color: yellow;
+}
+
+#movieRating
+{
+    width: 100px;
+    height: 100px;
+}
+
+#starPic
+{
+    background-image: url('star.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+#starPic p
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+.similarFlex::-webkit-scrollbar, #episodes::-webkit-scrollbar, #allComments::-webkit-scrollbar
+{
+	height: 10px;
+    background: #303030;
+    border-radius: 10px;
+}
+
+.similarFlex::-webkit-scrollbar-thumb, #episodes::-webkit-scrollbar-thumb, #allComments::-webkit-scrollbar-thumb
+{
+    background-color: rgb(187, 70, 49);
+    border-radius: 10px;
+}
+
+#episodes::-webkit-scrollbar, #allComments::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+@media screen and (max-width: 700px)
+{
+    #thumbnail, #generalInfo, #movieInfo, #synopsis, #trailers, #parentsGComm, #episodeGuide, #episodeGuideBtn
+    {
+        width: 100%;
+        padding: 10%;
+        height: auto;
+        left: 0;
+        text-align: center;
+    }
+
+    .similarFlex
+    {
+        max-height: 80%;
+    }
+
+    .similarLink
+    {
+        margin-top: 3%;
+        margin-right: 50%;
+    }
+
+    #parentsGComm
+    {
+        width: 80%;
+    }
+
+    .similarName
+    {
+        text-align: center;
+    }
+
+    #movieInfo
+    {
+        position: relative;
+    }
+
+    #commentBtn, #userComment, #userName,#nameField
+    {
+        left: 10%;
+    }
+    #trailers iframe
+    {
+        width: 70%;
+        height: 200px;
+    }
+    #synopsis p, #parentsGComm p
+    {
+        font-size: 1em;
+    }
+
+    #movieRating
+    {
+        position: relative;
+        left: calc(50% - 50px);
+    }
+    hr
+    {
+        left: 10%;
+    }
+
+    .seasonLinks
+    {
+        justify-content: center;
+    }
+
+    .episode
+    {
+        text-align: left;
+        height: 20%;
+        margin: 5% 5% 5% 0;
+    }
+
+    .episode img
+    {
+        max-height: 100%;
+        max-width: 35%;
+    }
+
+    #epInfo
+    {
+        padding-right: 2px;
+        left: 35%;
+        max-width: 30%;
+        max-height: 100%;
+        overflow: hidden;
+    }
+
+    #epNumber
+    {
+        right: 0;
+    }
+
+    #logo
+    {
+        font-size: 1.2em;
+    }
+
+    footer p
+    {
+    top: calc(50% - 0.5em);
+    font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1366px)
+{
+    #thumbnail, #generalInfo, #movieInfo, #synopsis, #trailers, #parentsGComm, #episodeGuide
+    {
+        margin-top: 4%;
+    }
+
+    .similarLink
+    {
+        margin-right: 10%;
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    #thumbnail, #generalInfo, #movieInfo, #synopsis, #trailers, #parentsGComm, #episodeGuide
+    {
+        margin-top: 6%;
+    }
+
+    .similarLink
+    {
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 700px) 
+{
+    #backgroundImg
+    {
+        height: 70%;
+    }
+
+    footer
+    {
+        height: 10%;
+    }
+}

@@ -1,0 +1,232 @@
+
+    *{
+        margin: 0;
+    }
+    .navBar{
+        width:100% ; position: absolute;top:0;left: 0; padding-top:10px; padding-bottom:10px;
+        z-index: 10; transition: 1s ease-out;
+        box-shadow: 5px 5px 5px black;
+    }
+    .navItems,.searchClose{
+        display: none;
+    }
+    .resultLinks{
+        font-size:1em;
+        position:absolute;
+        top:3%;
+        margin-left:2%;    }
+    .resultLinks :hover{
+        color:rgb(187, 70, 49);
+            
+    }
+    .resultDiv{
+        width:100%;position:relative;margin:2%
+    }
+    
+    .resultImage{
+        width:100px;height:100px;background-color:black;
+    }
+    #searchList{
+        LIST-STYLE-TYPE:NONE; margin-top:20px;
+    }
+    .searchResult{
+        display: none;
+        height:35vw;
+        overflow-y:auto;
+        overflow-x: hidden;
+        
+    }
+    .searchResult::-webkit-scrollbar
+{
+	height: 10px;
+    background: #303030;
+    border-radius: 10px;
+}
+    .searchResult::-webkit-scrollbar-thumb
+{
+    background-color: rgb(187, 70, 49);
+    border-radius: 10px;
+}
+    @media screen and (max-width:900px){
+        .searchResult{
+            height:60vw;
+        }
+    }
+    @media screen and (max-width:500px){
+        .searchResult{
+            height:100vw;
+        }
+    }
+    .navItems:hover{
+        transition: 0.4s;
+        color: rgb(187, 70, 49);
+        cursor: pointer;
+    }
+    
+    .hamMenuItems:hover , .dropdownItem:hover{
+        transition: 0.4s;
+        color: rgb(187, 70, 49);
+        cursor: pointer;
+    }
+.hamButton{
+    color:white; font-size: 1.5em;  text-decoration: none;
+ display: inline;   padding: 10px; padding-left:20px;padding-right:2%; 
+    cursor: pointer;
+}
+.pageTitle{
+    color:white; font-size: 1.5em;  text-decoration: none;
+ display: inline;   padding: 0px; padding-left:2%;
+    cursor: pointer;
+}
+.pageTitle:hover,.hamButton :hover{
+    cursor: pointer;
+    transition: 0.4s;
+    color:rgb(187, 70, 49);
+}
+.login{
+    float: right;
+    font-size:1em;
+    padding:0.8%;
+    
+    margin-right:0.8%;
+}
+
+.searchButton{
+    /*position:absolute;
+    top:15px;
+    right:40px;?*/
+    float: right;
+    margin-top: 1.2%;
+    padding-bottom: 5px;
+    padding-right: 2%;
+    transition: 0.1s ease-in;
+    cursor: pointer;    
+}
+
+.sideNav{
+    position: fixed;
+    left: 0;
+    top: 5%;
+    z-index: 1;
+    padding-top:30px;
+    width:0px;
+    transition:0.3s ease-out;
+    background-color:rgba(50, 50, 50, 0.97);
+    height:90%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.hamMenuItems{
+    display: none;
+    color: white;
+    padding: 10px;
+    padding-left:20px;
+    font-size: 20px;
+    z-index: 10;
+    
+}
+.dropdownItem{
+    display: none;
+    color:white;
+    padding : 6px;
+    margin-left:60px;
+    font-size: 16px;
+    animation: fade 0.7s;
+    z-index: 10;
+}
+.dropdownContainer{
+    display: none;
+    background-color: rgba(0,0,0,0.4);
+    animation: fade 1s;}
+#clsBtn{
+    position: absolute;
+    top:20px;
+    left:190px;
+    text-decoration: none;
+    font-size: 32px;
+    transition: 0.4s;
+}
+#clsBtn:hover, .searchClose:hover
+{
+    cursor: pointer;
+    color:rgb(187, 70, 49);
+}
+.searchBar{
+    width:100vw;
+    background-color: black;
+    position: absolute;
+    top:300px;
+}
+#search{
+    display: none;
+    border: none;
+    border-bottom: 5px solid rgb(187, 70, 49);
+    background-color: transparent;
+    width: 70%;
+    font-size: 1.2em;
+    color: white;
+    margin-left:20px;
+    margin-top:10px;
+    transition:0.5s;
+    padding: 10px 20px 10px 10px;
+    font-family: 'Arapey','Wendy One','Sofia','Times New Roman', Times, serif;
+}
+
+#search:focus
+{
+    border: 5px solid rgb(187, 70, 49);
+}
+.searchClose{
+    display: none;
+    color: rgb(220,220,220);
+    margin: 0;
+    padding-right: 8px;
+    float : right;
+    font-size:32px; 
+}
+
+::placeholder
+{
+    color: white;
+}
+
+.flexContainer{position: relative;}
+
+@media screen and (min-width:700px){
+    
+    .hamButton{
+        display: none;
+    }
+    .sideNav{
+        display: none;
+    }
+    .hamMenuItems{
+        display: none;
+    }
+    .pageTitle{
+        font-size: 150%;
+        padding: 25px;
+    }
+    .pageTitle:hover{
+        cursor: pointer;
+    }
+    .navItems,.login{
+        display: inline-block;
+        padding: 1%;
+        padding-top:1.3%;
+        color:rgb(220,220,220);
+        font-size: 100%;
+        margin: 0;
+        height: 100%;
+    }
+    .searchClose{
+        display: none;
+    }
+}
+.pageTitle{
+    
+ 
+}
+@keyframes fade {
+  from {opacity: .3} 
+  to {opacity: 1}}

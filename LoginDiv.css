@@ -1,0 +1,102 @@
+#label{
+    z-index:3;
+    font-size:1em;
+    color:white;    
+    font-family: 'Ubuntu','Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+#label1{
+    z-index:3;
+    font-size:2em;
+    color:white;
+    text-align: center;font-family: 'Ubuntu','Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding:20px;}
+.formInput{
+    z-index:3;
+    font-size:1em;
+    width:80%;
+    font-family: 'Ubuntu','Times New Roman', Times, serif;
+    font-weight: bolder;
+    }
+#signUp{
+    
+    z-index: 100;
+    padding:5px;
+    font-size:1em;
+    cursor: pointer;
+    position: relative;
+    left: calc(50% - 5.5em);
+    text-align:center;
+        }
+#signUp :hover{
+    color:red;
+}
+#loginForm{
+    z-index:2;
+    width:90%;height:80%;position:static;margin:auto;
+}
+#blur{
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0;
+    width: 500px;
+    height: 500px;
+    z-index: 1;
+    filter:blur(10px);
+    
+}
+#submitBtn{
+    z-index:3;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+.loginPage{z-index:2;
+width:30%;min-height:50%;height: auto;position:absolute;right:35%;top:25%; 
+background-color: rgba(29, 29, 29, 0.952);display:block;overflow:hidden;
+box-shadow: 3px 3px 5px black;display:none;transition:0.5s;}
+#switchLS{
+    z-index: 9;
+    width: 100%;
+    height:auto;
+}
+#switchLS :hover{
+    background-color: red;
+}
+.closeLoginBtn{
+    font-size:2em;
+    color: white;
+    position:absolute;
+    top:0;
+    right:10%;
+    padding-top: 15px;
+    transition: 0.5s;
+    z-index:10;
+}
+.closeLoginBtn :hover{
+    color:red;
+    font-size:1.6em;
+}
+h1,a
+{
+    font-family: 'Ubuntu','Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+a
+{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+#signUp:hover
+{
+    color: rgb(187, 70, 49);
+}
+
+.closeLoginBtn
+{
+    cursor: pointer;
+}
